@@ -1,14 +1,12 @@
 package 인프런;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 
 public class section2_12 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
         String str = br.readLine();
         ArrayList<String> letter = new ArrayList<>();
@@ -19,15 +17,16 @@ public class section2_12 {
             char[] alphabet = letter.get(i).toCharArray();
             String digit = "";
             for (int j = 0; j < alphabet.length; j++) {
-                if (alphabet[i] == '#'){
+                if (alphabet[j] == '#'){
                     digit += 1;
                 } else {
                     digit += 0;
                 }
             }
-            int translation = Integer.parseInt(digit, 2); // 10진수로 변환까지 함
+            int translation = Integer.parseInt(digit, 2);
+            bw.write((char)translation);
         }
-        System.out.println(letter);
-        System.out.println(letter.size());
+        bw.flush();
+        bw.close();
     }
 }
