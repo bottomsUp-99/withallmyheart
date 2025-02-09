@@ -1,10 +1,9 @@
-package 인프런;
+package 인프런.section2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class section2_9 {
     public static void main(String[] args) throws IOException {

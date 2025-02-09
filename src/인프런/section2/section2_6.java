@@ -1,7 +1,6 @@
-package 인프런;
+package 인프런.section2;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.LinkedHashSet;
 
 public class section2_6 {
