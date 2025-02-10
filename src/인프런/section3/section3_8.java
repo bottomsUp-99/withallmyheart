@@ -1,7 +1,6 @@
 package 인프런.section3;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class section3_8 {
