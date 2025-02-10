@@ -14,12 +14,19 @@ public class section3_8 {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int[] copy = arr;
-        Arrays.sort(arr);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if ()
-            }
+        for (int x : solution(arr, n)){
+            System.out.print(x + " ");
         }
+    }
+    public static int[] solution(int[] arr, int n){
+        int[] answer = new int[n];
+        for (int i = 0; i < n; i++) {
+            int rank = 1;
+            for (int j = 0; j < n; j++) {
+                if (arr[j] > arr[i]) rank++;
+            }
+            answer[i] = rank;
+        }
+        return answer;
     }
 }
