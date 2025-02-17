@@ -30,6 +30,20 @@ public class section3_10 {
 //                }
 //            }
 //        }
+    // 봉우리 찾기--->이렇게 해야 함
+//        for (int i = 1; i <= n; i++) {
+//        for (int j = 1; j <= n; j++) {
+//            int compare = square[i][j];
+//
+//            // 상하좌우 모두 비교하여 가장 큰 경우만 카운트
+//            if (compare > square[i - 1][j] &&
+//                    compare > square[i + 1][j] &&
+//                    compare > square[i][j - 1] &&
+//                    compare > square[i][j + 1]) {
+//                answer++;
+//            }
+//        }
+//    }
 //        System.out.println(answer);
 //    }
     static int[] dx={-1, 0, 1, 0};
